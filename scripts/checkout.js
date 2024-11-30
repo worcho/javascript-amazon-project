@@ -91,6 +91,8 @@ cart.forEach((cartProduct) => {
 
 document.querySelector('.js-order-summary').innerHTML = productsHtml;
 
+document.querySelector('.js-return-to-home-link').innerHTML = cart.length + ' items';
+
 document.querySelectorAll('.js-delete-link')
   .forEach((link) => {
       link.addEventListener('click', () => {
